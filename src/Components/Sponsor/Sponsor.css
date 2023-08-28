@@ -1,6 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Changed the background-color to black */
+    background-color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    /* Changed the background-color to dark gray */
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /* Added a fade-in animation for the header */
+    animation: fade-in 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
 .main {
-    padding:70px;
-    background-color: #333;
+    padding: 20px;
 }
 
 .myheading {
@@ -21,7 +55,7 @@
 
 .main p:hover {
     /* color: #333; */
-    color: rgb(200, 177, 233);
+    color:rgb(200, 177, 233);
 }
 
 .sponsor-section {
@@ -39,37 +73,34 @@
     /* Changed the border color to light gray */
     /* border: 1px solid #ccc; */
     /* border-radius: 10px; */
-    /* Changed the box-shadow color to dark gray */
-    /* box-shadow: 2px 2px 5px rgba(50,50,50,0.5); */
-    margin: 10px;
-    overflow: hidden;
-    /* Added a zoom-in effect for the sponsor cards */
-    transition:
-        transform 0.3s ease-in-out;
-    display: flex;
-    /* Use flexbox layout */
+     /* Changed the box-shadow color to dark gray */
+     /* box-shadow: 2px 2px 5px rgba(50,50,50,0.5); */
+     margin: 10px; 
+     overflow: hidden; 
+     /* Added a zoom-in effect for the sponsor cards */ 
+     transition:
+        transform 0.3s ease-in-out; 
+        display: flex; /* Use flexbox layout */
     vertical-align: middle;
-    justify-content: center;
-    /* Center items horizontally */
-    align-items: center;
-    /* Center items vertically */
-}
+    justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+} 
 
-.sponsor-card img {
-    width:
-        100%;
-    height:
-        100%;
-    /* object-fit:
+.sponsor-card img { 
+     width:
+        100%; 
+     height:
+        100%; 
+     /* object-fit:
         cover;  */
-    /* max-width: 100%;
+        /* max-width: 100%;
         width: auto; */
-}
+} 
 
-.sponsor-card:hover {
-    transform:
-        scale(1.1);
-}
+.sponsor-card:hover { 
+     transform:
+        scale(1.1); 
+} 
 
 /* .footer { 
     
@@ -90,51 +121,36 @@
      font-size:
         16px;            
 }  */
-.myheading {
-    color: rgb(200, 177, 233);
+.myheading{
+    color:rgb(200, 177, 233);
     text-align: center;
 }
 
-/* CSS code for defining the keyframes of the animations */
-@keyframes fade-in {
-    from {
-        opacity:
-            0;
-    }
+ /* CSS code for defining the keyframes of the animations */ 
+ @keyframes fade-in { 
+      from {opacity:
+         0;} 
+      to {opacity:
+         1;} 
+ } 
 
-    to {
-        opacity:
-            1;
-    }
-}
+ @keyframes slide-in { 
+      from {transform:
+         translateX(-25%);} 
+      to {transform:
+         translateX(0%);} 
+ }
 
-@keyframes slide-in {
-    from {
-        transform:
-            translateX(-25%);
-    }
-
-    to {
-        transform:
-            translateX(0%);
-    }
-}
-
-@keyframes slide-out {
-    from {
-        transform:
-            translateX(25%);
-    }
-
-    to {
-        transform:
-            translateX(0%);
-    }
-}
+ @keyframes slide-out { 
+      from {transform:
+         translateX(25%);} 
+      to {transform:
+         translateX(0%);} 
+ }
 
 
-/* Footer */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+ /* Footer */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
@@ -397,47 +413,39 @@ ul {
 /* Horizontal lines */
 .divider {
     display: flex;
-
+    
     &:before,
     &:after {
-        content: "";
-        flex: 1;
+      content: "";
+      flex: 1;
     }
-}
+  }
 
-.line {
+  .line {
     align-items: center;
     margin: 1em -1em;
-
+    
     &:before,
     &:after {
-        height: 1px;
-        margin: 0 1em;
+      height: 1px;
+      margin: 0 1em;
     }
-}
+  }
 
-.glow {
-
+  .glow {
     &:before,
     &:after {
-        height: 6px;
-        border-radius: 5px;
+      height: 6px;
+      -webkit-filter: blur(5px);
+      border-radius: 5px;
     }
-
+    
     &:before {
-        background: linear-gradient(to right, blue, hotpink);
+      background: linear-gradient(to right, blue, hotpink);
     }
-
+    
     &:after {
-        background: linear-gradient(to left, blue, hotpink);
+      background: linear-gradient(to left, blue, hotpink);
     }
-
-    /* Vendor prefixes for filter property */
-    &:before,
-    &:after {
-        -webkit-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(5px);
-    }
-}
+  }
+    
