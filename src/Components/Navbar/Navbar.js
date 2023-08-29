@@ -10,13 +10,16 @@ const Navbar = () => {
 
     const handleNavClick = () => {
         setNavActive(!isNavActive);
+        console.log("Clicked menu");
+        const mainListDiv = document.getElementById('mainListDiv');
+        mainListDiv.classList.toggle('show_list');
+        mainListDiv.style.display = 'block';
     };
 
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
                 document.querySelector('.nav-nav').classList.add('affix');
-                console.log('OK');
             } else {
                 document.querySelector('.nav-nav').classList.remove('affix');
             }
@@ -45,7 +48,7 @@ const Navbar = () => {
                             <li><Link to={"/Sponsors"}>Sponsors</Link></li>
                         </ul>
                     </div>
-                    <span className="nav-navTrigger">
+                    <span className="nav-navTrigger" onClick={handleNavClick}>
                         <i></i>
                         <i></i>
                         <i></i>

@@ -1,13 +1,13 @@
 import Navbar from '../Components/Navbar/Navbar';
-import Sponsor from '../Components/Sponsor/Sponsor';
+import Tech_Expo from '../Components/Tech_Expo/Tech_Expo';
 
-function Sponsor_Page() {
+function Tech_Expo_Page() {
   return (
     <>
       <Navbar />
-      <Sponsor/>
+      <Tech_Expo/>
     </>
   );
 }
 
-export default Sponsor_Page;
+export default Tech_Expo_Page;
