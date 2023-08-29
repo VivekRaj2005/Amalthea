@@ -74,7 +74,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -2;
+    position: fixed;
+    z-index: -4;
 }
 
 .nav-home span {

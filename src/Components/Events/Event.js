@@ -19,10 +19,10 @@ const Event = () => {
         const handleScroll = () => {
             const scroll = window.scrollY;
 
-            if (scroll < 650) {
-                const s1 = 1 - scroll / 1000;
-                const s2 = 1 - scroll / 1500;
-                const s3 = 1 - scroll / 550;
+            if (scroll < 2000) {
+                const s1 = 1 - scroll / 3000;
+                const s2 = 1 - scroll / 2500;
+                const s3 = 1 - scroll / 2000;
 
                 L1.forEach(l => {
                     l.style.transform = `scale(${s1})`;
