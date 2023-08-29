@@ -12,7 +12,7 @@ const Conclave = () => {
       <section className="nav-home">
         <span>Conclave...</span>
       </section>
-      <Main />
+      {/* <Main /> */}
       <Speakers />
     </>
   );

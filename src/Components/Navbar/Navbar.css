@@ -67,12 +67,14 @@
 .nav-home {
     width: 100%;
     height: 100vh;
-    background-image: url('AML_23.png');
+    /* background-image: url('AML_23.png'); */
+    background-color: #170036;
     background-position: center top;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -2;
 }
 
 .nav-home span {
@@ -358,23 +360,4 @@
 .affix {
     padding: 0;
     background-color: #111;
-}
-
-@media screen and (max-width: 1500px) {
-    .nav-home {
-        background-image: url("AML\ BG1.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-@media screen and (max-width: 769px) {
-    .nav-home {
-        background-image: url("AML\ mascot-01.png");
-        background-blend-mode: hue;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #13102f;
-    }
 }

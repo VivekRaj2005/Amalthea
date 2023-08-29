@@ -73,11 +73,11 @@ function Home() {
             }
 
             if (scroll < 1050) {
-                circle.style.transform = 'scale(2)';
+                circle.style.transform = 'scale(3)';
             }
 
             if (scroll > 1050 && scroll < 3800) {
-                const s4 = 2 - (scroll - 1050) / 875;
+                const s4 = 3 - (scroll - 1050) / 875;
                 const r = 23 + (scroll - 1050) * 0.2;
                 const g = 0 + (scroll - 1050) * 0.2;
                 const b = 54 + (scroll - 1050) * 0.2;
@@ -157,7 +157,7 @@ function Home() {
         };
     }, []);
     return (
-        <div>
+        <div className='body-1'>
             <div className="container">
                 <div className="circle"></div>
             </div>

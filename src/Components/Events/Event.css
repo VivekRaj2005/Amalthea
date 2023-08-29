@@ -5,8 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2d2a4c;
+    background-color: #170036;
     overflow: hidden;
+    position: absolute;
+    z-index: -3;
 }
 
 .container1 {
@@ -15,7 +17,7 @@
     top: 50%;
     transform: translate(-50%, -50%); */
     height: 90%;
-    width: 95%;
+    width: 70%;
     margin: 50px;
     background-color: #13102f;
 }
@@ -132,7 +134,7 @@
     position: absolute;
     bottom: 30px;
     right: 25vw;
-    z-index: 2;
+    z-index: 299;
     text-align: center;
     width: 100%;
 

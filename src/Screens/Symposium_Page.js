@@ -1,13 +1,13 @@
 import Navbar from '../Components/Navbar/Navbar';
-import Team from '../Components/Team/Team';
+import Symposium from '../Components/Symposium/Symposium';
 
-function Team_Page() {
+function Symposium_Page() {
   return (
     <>
       <Navbar />
-      <Team/>
+      <Symposium/>
     </>
   );
 }
 
-export default Team_Page;
+export default Symposium_Page;

@@ -10,6 +10,7 @@ const Speakers = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        backgroundColor:"#13102f"
       }}>
       <h1 style={{ margin: "25px", color: "white" }}>Speakers</h1>
       <div className="SpeakerContainer">
