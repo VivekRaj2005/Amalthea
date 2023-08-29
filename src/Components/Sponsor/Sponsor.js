@@ -18,8 +18,7 @@ const Sponsor = () => {
                         <img src="jsw.png" alt="JSW logo" />
                     </div>
                     <div className="sponsor-card">
-                        {/* Replace the image source with the logo of your platinum sponsor */}
-                        <img src="indextb.png" style={{ height: "80%" }} alt="indextb logo" />
+                        <img src="./indextb.png" style={{ height: "80%" }} alt="indextb logo" />
                     </div>
                 </div>
                 <h2 className="myheading divider line glow">DIAMOND SPONSORS</h2>
