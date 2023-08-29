@@ -1,6 +1,7 @@
 {
   "name": "amalthea",
   "version": "0.1.0",
+  "homepage": "https://vraj2811.github.io/Amalthea/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
