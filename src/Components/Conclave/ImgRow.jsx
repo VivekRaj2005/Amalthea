@@ -10,6 +10,8 @@ import img8 from "./img8.png";
 import img9 from "./img9.png";
 
 const ImgRow = ({ speed }) => {
+  console.log(Math.round(Math.random() * 10));
+
   const imagesList = [
     {
       id: 1,
@@ -59,18 +61,19 @@ const ImgRow = ({ speed }) => {
   ];
 
   return (
-    <div className="imgRow">
-      {imagesList.map(img => {
-        return (
-          <img
-            style={{ animationDuration: speed }}
-            className="carImg"
-            src={img.src}
-            alt="img"
-          />
-        );
-      })}
-    </div>
+    <>
+      <div
+        className="imgRow"
+        style={{
+          animationDuration: speed,
+          animationDirection:
+            Math.round(Math.random() * 10) > 5 ? "reverse" : "normal",
+        }}>
+        {imagesList.map(img => {
+          return <img className="carImg" src={img.src} alt="img" />;
+        })}
+      </div>
+    </>
   );
 };
 

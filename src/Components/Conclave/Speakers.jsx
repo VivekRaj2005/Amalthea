@@ -6,12 +6,13 @@ const Speakers = () => {
   return (
     <div
       style={{
+        height: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
       }}>
       <h1 style={{ margin: "25px", color: "white" }}>Speakers</h1>
-      <div className="container">
+      <div className="SpeakerContainer">
         <div className="row">
           {Data.map(speaker => (
             <SpeakerCard data={speaker} />

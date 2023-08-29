@@ -54,8 +54,4 @@ export const Data = [
     name: "Mary Huntley",
     title: "Web Developer",
   },
-  {
-    imgSrc: "https://picsum.photos/130/130?image=837",
-    name: "Kaushal",
-  },
 ];
