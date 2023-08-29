@@ -9,10 +9,13 @@ const Speakers = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor: "#13102f",
+        backgroundColor: "rgb(23 0 54)",
+        position: "absolute",
+        top: "100vh",
+        minHeight: "100vh",
       }}>
       <h1 style={{ margin: "25px", color: "white" }}>Speakers</h1>
-      <div className="SpeakerContainer">
+      <div className="SpeakerContainer" style={{ width: "80%" }}>
         <div className="row">
           {Data.map(speaker => (
             <SpeakerCard data={speaker} />

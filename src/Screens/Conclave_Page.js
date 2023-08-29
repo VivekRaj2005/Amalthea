@@ -1,13 +1,13 @@
 import Navbar from "../Components/Navbar/Navbar";
 import Conclave from "../Components/Conclave/Conclave";
-import Footer from "../Components/Footer/index";
+import Footer from "../Components/Footer/Footer";
 
 function Conclave_Page() {
   return (
     <>
       <Navbar />
       <Conclave />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
