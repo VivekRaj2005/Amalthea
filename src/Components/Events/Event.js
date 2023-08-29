@@ -8,6 +8,7 @@ const Event = () => {
         const prevButton = document.getElementById('prev');
         const nextButton = document.getElementById('next');
         const items = slideRef.getElementsByClassName('item');
+        const H = window.innerHeight;
         window.onbeforeunload = () => {
             window.scrollTo(0, 0);
         };
@@ -19,10 +20,10 @@ const Event = () => {
         const handleScroll = () => {
             const scroll = window.scrollY;
 
-            if (scroll < 2000) {
-                const s1 = 1 - scroll / 3000;
-                const s2 = 1 - scroll / 2500;
-                const s3 = 1 - scroll / 2000;
+            if (scroll < 2*H) {
+                const s1 = 1 - scroll / 2000;
+                const s2 = 1 - scroll / 10000;
+                const s3 = 1 - scroll / (0.5*H);
 
                 L1.forEach(l => {
                     l.style.transform = `scale(${s1})`;
@@ -122,16 +123,16 @@ const Event = () => {
     return (
         <>
             <div className="center" style={{ zIndex:-3 }}>
-                <h1 id="aml">AMALTHEA</h1>
+                <h1 id="aml">EVENTS</h1>
             </div>
-            <img className="aml-bg-1 L1" src="./Images/AML-BG-1.png" alt="" />
-            <img className="aml-bg-2 L1" src="./Images/AML-BG-2.png" alt="" />
+            <img className="aml-bg-1 L1" src="./Images/AML-BG-1.png" alt="" style={{ zIndex: 3 }}/>
+            <img className="aml-bg-2 L1" src="./Images/AML-BG-2.png" alt="" style={{ zIndex: 3 }}/>
             <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
             <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
             <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
-            <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
+            <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" style={{ zIndex: 4 }}/>
             <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
-            <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
+            <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" style={{ zIndex: 4 }}/>
             <section className="nav-home">
                 {/* <span>Events...</span> */}
             </section>

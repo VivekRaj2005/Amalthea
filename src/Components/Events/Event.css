@@ -5,11 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #170036;
+    /* background-color: #170036; */
     overflow: hidden;
     position: absolute;
-    z-index: -3;
-    top: 100vw;
+    z-index: 0;
+    top: 100vh;
 }
 
 .container1 {
