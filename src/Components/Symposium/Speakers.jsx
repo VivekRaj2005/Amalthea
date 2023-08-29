@@ -1,5 +1,5 @@
 import React from "react";
-import SpeakerCard from "./SpeakerCard";
+import SpeakerCard from "../Conclave/SpeakerCard";
 import { Data } from "./SpeakersData";
 
 const Speakers = () => {
@@ -10,7 +10,7 @@ const Speakers = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor:"#13102f"
+        backgroundColor: "#13102f",
       }}>
       <h1 style={{ margin: "25px", color: "white" }}>Speakers</h1>
       <div className="SpeakerContainer">

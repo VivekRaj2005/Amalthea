@@ -6,11 +6,10 @@ const Speakers = () => {
   return (
     <div
       style={{
-        height: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor:"#13102f"
+        backgroundColor: "#13102f",
       }}>
       <h1 style={{ margin: "25px", color: "white" }}>Speakers</h1>
       <div className="SpeakerContainer">

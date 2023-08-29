@@ -54,4 +54,14 @@ export const Data = [
     name: "Mary Huntley",
     title: "Web Developer",
   },
+  {
+    imgSrc: "https://picsum.photos/130/130?image=836",
+    name: "Mary Huntley",
+    title: "Web Developer",
+  },
+  {
+    imgSrc: "https://picsum.photos/130/130?image=836",
+    name: "Mary Huntley",
+    title: "Web Developer",
+  },
 ];
