@@ -10,8 +10,8 @@ const Speakers = () => {
         flexDirection: "column",
         alignItems: "center",
         backgroundColor: "rgb(23 0 54)",
-        position: "absolute",
-        top: "100vh",
+        marginTop: "100vh",
+        marginBottom: "20px",
         minHeight: "100vh",
       }}>
       <h1 style={{ margin: "25px", color: "white" }}>Speakers</h1>

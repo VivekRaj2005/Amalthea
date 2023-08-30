@@ -7,7 +7,7 @@ function Conclave_Page() {
     <>
       <Navbar />
       <Conclave />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

@@ -79,9 +79,6 @@ code {
     transform: translateX(-100%);
   }
 }
-.SpeakerContainer {
-  padding: 0px 20px 20px 20px;
-}
 
 .carImg {
   border-radius: 10%;
