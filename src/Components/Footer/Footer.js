@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <div className="footerBody">
-        <footer className="footer">
+        <footer className="footer" style={{ position: "relative" }}>
           <div className="waves">
             <div className="wave" id="wave1" />
             <div className="wave" id="wave1" />

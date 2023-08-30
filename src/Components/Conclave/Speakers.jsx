@@ -11,7 +11,7 @@ const Speakers = () => {
         alignItems: "center",
         backgroundColor: "rgb(23 0 54)",
         marginTop: "100vh",
-        marginBottom: "20px",
+        marginBottom: "80px",
         minHeight: "100vh",
       }}>
       <h1 style={{ margin: "25px", color: "white" }}>Speakers</h1>
