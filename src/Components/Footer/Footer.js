@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="wave" id="wave4" />
           </div>
           <div className="footerContainer">
-            <div className="footer-cta pt-5 pb-5">
+            <div className="footer-cta pb-5">
               <div className="row">
                 <div className="col-xl-4 col-md-4 mb-30">
                   <div className="single-cta">
@@ -110,8 +110,9 @@ const Footer = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
                   <div className="footer-widget">
                     <iframe
+                      title="Location"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.815711501198!2d72.680826401297!3d23.213385807079444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2adec1f16d8d%3A0xdc447b8706689bc3!2sIndian%20Institute%20Of%20Technology%20Gandhinagar%20(IIT%20Gandhinagar)!5e0!3m2!1sen!2sin!4v1689849536725!5m2!1sen!2sin"
-                      style={{ border: 0 }}
+                      className="locMap"
                       allowFullScreen=""
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
@@ -123,9 +124,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <p style={{ color: "black" }}>
+          <h3 className="amaltheaCopyright">
             ©2023 Amalthea IITGN | All Rights Reserved
-          </p>
+          </h3>
         </footer>
       </div>
     </>
