@@ -228,32 +228,19 @@ ul {
 }
 
 .footer-widget ul li {
+  font-size: 15px;
   float: left;
   width: 50%;
   margin-bottom: 12px;
 }
 
-.footer-widget ul li a:hover {
-  color: #ff5e14;
-}
-
 .footer-widget ul li a {
   color: rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
+  font-size: 15px;
 }
-
-.footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.footer-menu li:hover a {
+.footer-widget ul li a:hover {
   color: #ff5e14;
-}
-
-.footer-menu li a {
-  font-size: 14px;
-  color: #878787;
 }
 
 .locMap {
