@@ -26,10 +26,11 @@
     text-decoration: none;
     color: #fff;
     font-size: 2.5rem;
+
 }
 
 .nav-nav div.nav-logo a:hover {
-    color: #00E676;
+    font-weight: bold;
 }
 
 .nav-nav div.nav-main_list {
@@ -58,10 +59,11 @@
     color: #fff;
     line-height: 65px;
     font-size: 2.4rem;
+    transition: 0.5s;
 }
 
 .nav-nav div.nav-main_list ul li a:hover {
-    color: #00E676;
+    color: #d023ab;
 }
 
 .nav-home {
@@ -102,6 +104,18 @@
 }
 
 @media screen and (max-width:900px) {
+    .nav-navlinks{
+        background-color: #170036 !important;
+      }
+    
+      .nav-navlinks li{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        display: flex;
+        transition: 1s;
+      }
+
     .nav-navTrigger {
         display: block;
     }
@@ -119,6 +133,7 @@
     .nav-nav div.show_list {
         height: auto;
         display: none;
+        transition: 1s;
     }
 
     .nav-nav div.nav-main_list ul {
@@ -142,6 +157,10 @@
         width: 100%;
         font-size: 3rem;
         padding: 20px;
+    }
+
+    .nav-nav div.nav-main_list ul li a:hover{
+        background-color: #d023ab;
     }
 
     .nav-nav div.media_button {
@@ -358,8 +377,10 @@
     }
 }
 
+
 .affix {
     display: none;
     padding: 0;
     /* background-color: #111; */
 }
+
